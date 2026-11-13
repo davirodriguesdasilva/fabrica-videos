@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Fábrica de Vídeos</title>
+<style>
+  :root { --bg:#ffffff; --text:#16181d; --muted:#5d6470; --accent:#2a6fcc; --line:#e3e6ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111317; --text:#eceef2; --muted:#a3a9b4; --accent:#6aa3f0; --line:#2a2e35; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:1.8rem; margin:0 0 8px; } h2 { font-size:1.15rem; margin-top:28px; }
+  .muted { color:var(--muted); } a { color:var(--accent); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="muted">Fábrica de Vídeos · última atualização: 13 de novembro de 2026</p>
+
+  <p>A Fábrica de Vídeos é uma ferramenta pessoal, usada apenas pelo dono dos canais do YouTube que ela gerencia. Esta página explica quais dados ela acessa e o que faz com eles.</p>
+
+  <h2>Dados acessados</h2>
+  <p>Com a autorização dada pelo próprio usuário na tela de login do Google, o app acessa, nos canais desse usuário:</p>
+  <ul>
+    <li><strong>Envio e gestão de vídeos</strong> (escopos <code>youtube.upload</code>, <code>youtube</code> e <code>youtube.force-ssl</code>): enviar vídeos, thumbnails e legendas, adicionar a playlists, agendar a publicação e confirmar o status dos vídeos enviados.</li>
+    <li><strong>Métricas do canal</strong> (escopo <code>yt-analytics.readonly</code>): visualizações, tempo assistido, retenção, inscritos e origem do tráfego, só para leitura.</li>
+    <li><strong>Identificação do canal</strong>: id e nome do canal, para garantir que cada vídeo vá para o canal certo.</li>
+  </ul>
+
+  <h2>Como os dados são usados</h2>
+  <ul>
+    <li>Publicar os vídeos produzidos pelo próprio dono nos canais dele.</li>
+    <li>Mostrar ao dono um painel e relatórios sobre o desempenho dos canais dele.</li>
+  </ul>
+  <p>Os dados não são vendidos, compartilhados com terceiros, usados para publicidade nem para treinar modelos de inteligência artificial.</p>
+
+  <h2>Armazenamento e segurança</h2>
+  <ul>
+    <li>Tudo fica no computador do dono. O app não tem servidor próprio.</li>
+    <li>Os tokens de acesso do Google são guardados cifrados (AES-256-GCM), com uma chave que só o dono tem.</li>
+    <li>As métricas ficam num banco de dados local e não saem do computador.</li>
+  </ul>
+
+  <h2>Revogar o acesso e apagar os dados</h2>
+  <p>O acesso pode ser revogado a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Apagar a pasta do app remove os tokens e as métricas guardados localmente.</p>
+
+  <h2>Uso limitado</h2>
+  <p>O uso de informações recebidas das APIs do Google segue a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de uso limitado. O app também segue os <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> e a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta política: <a href="https://github.com/davirodriguesdasilva/fabrica-videos/issues">abra uma issue no GitHub</a>.</p>
+
+  <footer><a href="./">Fábrica de Vídeos</a></footer>
+</main>
+</body>
+</html>
